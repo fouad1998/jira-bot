@@ -1,4 +1,5 @@
-const { postgresPool } = require('./db');
+require("dotenv/config");
+const { postgresPool } = require("./db");
 
 async function setup() {
   await postgresPool.query(`
